@@ -360,6 +360,10 @@ display: none;
     overflow: hidden;
 }
 
+.btn-hide {
+    display: none;
+}
+
 @media (max-width: 1000px) {
     
     .nav-links{

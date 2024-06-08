@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
 
+
+
 *{
     margin: 0;
     font-family: 'Inter', sans-serif;
@@ -278,65 +280,223 @@ footer{
     justify-content: space-around;
     align-items: center;
     color: #FFF;
- }
+}
  
- .footer-info p{
-    font-family: 'Comfortaa';
-    padding-bottom: 10px;
- }
+.footer-info p{
+font-family: 'Comfortaa';
+padding-bottom: 10px;
+}
  
- .footer-year p{
-    font-family: 'Comfortaa';
-    letter-spacing: 1.5px;
- }
+.footer-year p{
+font-family: 'Comfortaa';
+letter-spacing: 1.5px;
+}
+
+.footer-links a{
+margin-right: 15px;
+}
+
+nav{
+position: fixed;
+top: 0;
+width: 100%;
+z-index: 10;
+}
+
+.fixed-menu{
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex: 1;
+}
+
+.nav-links{
+display: flex;
+justify-content: center;
+flex-grow: 1;
+padding-right: 150px;
+}
+
+.nav-link{
+width: auto;
+padding: 5px;
+height: 40px;
+border-radius: 12px;
+border: 2px solid #000;
+background-color: #FFF;
+text-decoration: none;
+color: #000;
+font-size: 20px;
+font-family: 'Comfortaa';
+display: flex;
+justify-content: center;
+align-items: center;
+margin-right: 20px;
+}
  
- .footer-links a{
-    margin-right: 15px;
- }
+.logo{
+color: #BBFF2C;
+font-size: 80px;
+padding-left: 50px;
+}
 
- nav{
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 10;
- }
+.active{
+background-color: #BBFF2C;
+}
 
- .fixed-menu{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex: 1;
- }
- .nav-links{
-    display: flex;
-    justify-content: center;
-    flex-grow: 1;
-    padding-right: 150px;
- }
+.mobile-button{
+    display: none;
+    padding-top: 10px;
+    width: 40px;
+    position: absolute;
+    right: 20px;
+}
 
- .nav-link{
-    width: auto;
-    padding: 5px;
-    height: 40px;
-    border-radius: 12px;
-    border: 2px solid #000;
-    background-color: #FFF;
-    text-decoration: none;
-    color: #000;
-    font-size: 20px;
-    font-family: 'Comfortaa';
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 20px;
- }
- 
- .logo{
-    color: #BBFF2C;
-    font-size: 80px;
-    padding-left: 50px;
- }
+.hide{
+display: none;
+}
 
- .active{
-    background-color: #BBFF2C;
- }
+.off-scroll{
+    overflow: hidden;
+}
+
+@media (max-width: 1000px) {
+    
+    .nav-links{
+        display: none;
+    }
+
+    .logo{
+        font-size: 40px;
+        padding-left: 20px;
+        padding-top: 10px;
+    }
+
+    .main-content{
+        max-width: 320px;
+    }
+
+    .main-title{
+        padding-top: 30px;
+        font-size: 30px;
+    }
+
+    .main-subtitle{
+        font-size: 15px;
+    }
+
+    .planet, .moving-cloud, .moving-planet2{
+        display: none;
+    }
+
+    .title{
+        font-size: 50px;
+        padding-top: 30px;
+    }
+
+    .about-block{
+        flex-direction: column;
+        margin-top: 20px;
+        padding: 0;
+    }
+
+    .about-card{
+        order: -1;
+        background-size: contain;
+        padding-top: 20px;
+        width: 326px;
+        height: 296px;
+    }
+
+    .about-card img{
+        width: 85%;
+    }
+
+    .about-content{
+        width: 75%;
+        height: 250px;
+        margin-bottom: 20px;
+    }
+
+    .about-title{
+        font-size: 18px;
+    }
+
+    .skills-card{
+        margin: 20px;
+        padding-left: 10px;
+        background-size: contain;
+    }
+
+    .skills-card p{
+        font-size: 16px;
+        margin-top: 15%;
+        margin-bottom: 20px;
+    }
+
+    .skills-section{
+        min-height: 60vh;
+    }
+
+    .skills-card .button{
+        position: absolute;
+        bottom: 100px;
+    }
+
+    .works-block{
+        flex-direction: column;
+        padding: 20px 0;
+    }
+
+    .works-block img{
+        margin: 20px 0;
+        width: 80%;
+    }
+
+    .comments-block{
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        margin: 0 auto;
+        padding-top: 50px;
+    }
+
+    .comment{
+        background-image: url(img/comment-mobile.png);
+        background-repeat: no-repeat;
+    }
+
+    .comment p{
+        font-size: 15px;
+        max-width: 290px;
+        padding-bottom: 75px;
+    }
+
+    .mobile-button {
+        display: block;
+    }
+
+    
+     .mobile-menu{
+        position: absolute;
+        top: 0;
+        z-index: -1;
+        width: 100%;
+        background-color: #200153;
+        min-height: 100vh;
+    }
+    
+     .mobile-nav{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+     
+     .mobile-nav-links .nav-link{
+        margin-bottom: 30px;
+        width: 210px;
+        height: 50px;
+    }
+}
